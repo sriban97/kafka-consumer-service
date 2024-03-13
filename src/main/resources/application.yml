@@ -28,14 +28,14 @@ spring:
   application:
     name: kafka-consumer-service
   config:
-    import: "optional:configserver:http://192.168.1.31:9090"
+    import: 'optional:configserver:${config-server}'
     name: kafka-consumer-service
   profiles:
     active: dev
 
-  kafka:
-    consumer:
-      bootstrap-servers: localhost:9092
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      group-id: client_group
+#  kafka:
+#    consumer:
+#      bootstrap-servers: 192.168.1.7:9092
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      group-id: client_group

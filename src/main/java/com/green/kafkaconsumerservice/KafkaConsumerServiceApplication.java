@@ -9,7 +9,6 @@ import org.springframework.kafka.annotation.KafkaListener;
 @EnableKafka
 public class KafkaConsumerServiceApplication {
 
-
     public static void main(String[] args) {
         SpringApplication.run(KafkaConsumerServiceApplication.class, args);
     }
