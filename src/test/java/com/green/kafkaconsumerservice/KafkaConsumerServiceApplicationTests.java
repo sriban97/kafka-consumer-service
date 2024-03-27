@@ -1,4 +1,4 @@
-package com.green.batchservice;
+package com.green.kafkaconsumerservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
